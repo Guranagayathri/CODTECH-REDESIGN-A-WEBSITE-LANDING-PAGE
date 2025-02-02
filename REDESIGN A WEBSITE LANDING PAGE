@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull & Bear - Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../../assets/images/pu.png" class="rounded-l-lg">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    background: url('../../assets/images/pull') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.trending {
+    text-align: center;
+    padding: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pull & Bear</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>New Season, New Style</h2>
+            <p>Discover the latest trends at Pull & Bear.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="../../assets/images/casu.jpg" alt="Product">
+                <h3>Casual Jacket</h3>
+                <p>$79.99</p>
+            </div>
+            <div class="product">
+                <img src="../../assets/images/sne.jpg" alt="Product">
+                <h3>Stylish Sneakers</h3>
+                <p>$59.99</p>
+            </div>
+            <div class="product">
+                <img src="../../assets/images/je.jpg" alt="Product">
+                <h3>Denim Jeans</h3>
+                <p>$49.99</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pull & Bear. All rights reserved.</p>
+    </footer>
+</body>
+</html>
